@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navigasi {
+    background-color: #A7825F;
+    width: 100%;
+    height: 75px;
+    color: #F2E8CF ;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.menu {
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color:#F2E8CF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    background: #A7825F;
+}
+
+.menu ul li ul.dropdown {
+    width: 150px;
+    background: #A7825F;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #A7825F;
+    border-radius: 5px;
+}
+
+.menu ul li ul.dropdown li {
+    display: block;
+}
+
+.menu ul li ul.dropdown li a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+.menu ul li a:hover {
+    color: white;
+    font-style: italic
+}
+.menu ul li ul.dropdown li a:hover {
+    color: white;
+    font-style: italic;
+}
+
+.menu ul li:hover ul.dropdown {
+    display: block;
+}
+.banner{
+    background-color: #F2E8CF;
+    height: 650px;
+    text-align: center;
+}
+
+.banner img{
+    height: 260px;
+    margin-top: 130px;
+    margin-right: 0px;
+}
+.banner h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.banner button{
+    margin-top: 60px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 50px;
+    border: none;
+}
+.banner button:hover{
+    background-color: #A7825F;
+    border: 1px solid white;
+    color: #F2E8CF;
+}
+.profile { 
+    background-color: #A7825F; /* Latar belakang */
+    height: 600px; /* Tinggi kontainer */
+    display: flex; /* Gunakan Flexbox */
+    flex-direction: column; /* Elemen disusun secara vertikal */
+    align-items: center; /* Elemen rata tengah secara horizontal */
+    justify-content: center; /* Elemen rata tengah secara vertikal */
+    text-align: center; /* Teks di tengah */
+    padding: 20px; /* Berikan ruang di dalam kontainer */
+    box-sizing: border-box; /* Sertakan padding dalam perhitungan lebar */
+}
+.profile img{
+    height: 270px;
+    margin-top: 60px;
+    margin-right: 500px;
+    border-radius: 50px;
+}
+.profile h1 {
+    color: black;
+    margin-top: -130px; /* Hilangkan margin default */
+    margin-bottom: 0px; /* Berikan jarak ke bawah */
+}
+.profile h2{
+    margin-top: -200px;
+    margin-bottom: 10px;
+    margin-left: 700px;
+}
+.profile ul li{
+    margin-left: 500px;
+    margin-bottom: 3px;
+    text-align: justify;
+    font-size: 25px;
+    list-style-type: none;
+}
+.gallery {
+    background-color: #F2E8CF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar gambar */
+    flex-wrap: wrap; /* Gambar tetap rapi di layar kecil */
+}
+
+.gallery-content img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* Memastikan gambar proporsional */
+    border-radius: 10px;
+    border: 2px solid #A7825F;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery-content img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bagian More */
+.more {
+    background-color: #A7825F;
+    padding: 50px 20px;
+    text-align: center;
+    color: #F2E8CF;
+}
+
+.more h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.more-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.more-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8F6E50;
+    color: #F2E8CF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-content button:hover {
+    background-color: #6B4F3D;
+}
+.menu ul li:focus-within ul.dropdown,
+.menu ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px; /* Jarak dari atas (menghindari navigasi tetap) */
+    margin-top: 75px; /* Offset untuk navigasi tetap */
+    background-color: #F2E8CF;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
